@@ -1,13 +1,27 @@
 <!-- Le page html -->
 
-<html>
-    <head>
-        <title>BBIPC Streem</title>
-    </head>
-    <body>
-            <h1>BBIPC Framework page</h1>
-        <!--img src="stream.mjpg" width="1920" height="1080" /-->
-        <img src = "tater.png" width = "1920" height = "1080"/>
-    </body>
-</html>
+<!DOCTYPE html>
+
+<head>
+    <title> BBIPC Camera</title>
+    <!-- rel types important -->
+    <link rel = "stylesheet" type="text/css" href = "pageCSS.css">
+</head>
+
+<body>
+    <h1 class="spacing">Live BBIPC Feed</h1>
+
+    
+
+    <div>
+        <!--img src="stream.mjpg" alt="Camera feed" class="center" id="cam-feed"/-->
+        <img src="tater.png" alt="tater" id="cam-feed"/>
+        <img src="image.png" alt="overlay image" id="overimg">  
+    </div>
+
+    <button id="Overlayb" class="overlayButton " type="button"> Enable Overlay </button>
+    <script src ="script.js"></script>
+ 
+</body>
+
 

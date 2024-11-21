@@ -1,0 +1,52 @@
+/* pageCSS.ss */
+
+body {
+    background-color: tomato;
+    text-align: center;
+ 
+    position: relative;
+
+    justify-items: center;
+    align-items: center;
+}
+
+.spacing {
+    margin-bottom: 0%;
+}
+
+.overlayButton {
+    position: relative;
+    background-color: green;
+    color: white;
+    
+    width: 200px;
+    height: 50px;
+
+    font-size: larger;
+    cursor: pointer;
+}
+
+/* #name is the specfic aspects for a element w/ that named id*/
+#cam-feed {
+    position: absolute;
+    display:flex;
+    object-fit: cover;
+    z-index:0;
+
+    transform: translateX(-225px);
+
+    scale: 100%;
+    align-self: auto ;
+}
+
+#overimg {
+    position:relative;
+
+    transform: translateY(-100px);
+
+    scale: 80%;
+
+    z-index: 2;
+    opacity: 1;
+}
+
