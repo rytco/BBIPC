@@ -64,7 +64,8 @@ class HttpHandler(server.BaseHTTPRequestHandler):
             self.send_error(404)
             self.end_headers()
 
-class WebServer(socketserver.ThreadingMixIn, server.HTTPServer): # Utilizes threading to help website running
+class WebServer(socketserver.ThreadingMixIn, server.HTTPServer): 
+    # Utilizes threading to help website running
     allow_reuse_address = True # Helps with website restarting
     daemon_threads = True # Helps with keeping track of threads
 
