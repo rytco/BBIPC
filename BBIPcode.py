@@ -26,6 +26,7 @@ class VideoOut(io.BufferedIOBase): # Video feed
 
 # https://docs.python.org/3/library/http.server.html#http.server.HTTPServer
 class HttpHandler(server.BaseHTTPRequestHandler):
+    # Processes incoming HTTP GET requests from the browser. 
     def do_GET(self):
         if (self.path == "/"): # Auto redirects into stream feed
             self.send_response(301)
